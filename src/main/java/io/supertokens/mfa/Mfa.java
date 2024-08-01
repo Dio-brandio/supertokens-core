@@ -17,8 +17,6 @@ public class Mfa {
                 return;
             }
         }
-        throw new FeatureNotEnabledException(
-                "MFA feature is not enabled. Please subscribe to a SuperTokens core license key to enable this " +
-                        "feature.");
+       
     }
 }
