@@ -89,7 +89,6 @@ public class Totp {
             throws DeviceAlreadyExistsException, StorageQueryException, FeatureNotEnabledException,
             TenantOrAppNotFoundException {
 
-        Mfa.checkForMFAFeature(appIdentifier, main);
 
         if (deviceName != null) {
             TOTPSQLStorage totpStorage = StorageUtils.getTOTPStorage(storage);
